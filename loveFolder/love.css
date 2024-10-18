@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Poppins", Roboto;
+    font-weight: 400;
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+.span {
+    background: linear-gradient(135deg, dodgerblue, rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+body {
+    background-color: rgb(235, 232, 232);
+    color: rgb(0, 0, 0);
+    padding-bottom: 5000px;
+
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -10;
+    position: absolute;
+
+
+
+}
+
+#new-image {
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+    height: 100vh;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    column-gap:100px;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+    color: black;
+    position: fixed;
+    top:5px;
+    left: 50%;
+    background-color:rgba(0, 0, 0, 0.381);
+    color: rgb(255, 255, 255);
+    width: max-content;
+    transform: translateX(-50%);
+    padding:5px 70px;
+    border-radius: 100px;
+    background-color:rgba(255, 255, 255, 0.9);
+    box-shadow:  0 0 3px rgba(0, 0, 0, 0.326);
+}
+#blur{
+    background-color:rgba(255, 255, 255, 0.687);
+    width: 100%;
+    height:100%;
+    position: absolute;
+    border-radius: 100px;
+    z-index:-10;
+    filter: blur(5px);
+}
+
+.logo {
+    font-weight: 30px;
+    font-weight: bold;
+}
+
+.nav nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 15px;
+    color: black;
+}
+
+.btn-login-container button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+}
+
+.btn-login-container button:nth-child(2) {
+    background-color: dodgerblue;
+    color: rgb(255, 255, 255);
+
+}
+
+#content {
+
+    height: 90vh;
+    display: grid;
+    place-items: center;
+}
+
+#content-text {
+    width: 90%;
+    text-align: center;
+}
+
+#content-text span {
+    font-size: 15px;
+}
+
+#content-text h1 {
+    font-size: 70px;
+    font-weight: 600;
+    margin: 20px 0px;
+    color: rgb(0, 0, 0);
+}
+
+#content-text p {
+    width: 800px;
+    margin: 0px auto;
+    line-height: 30px;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+#content-text button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#in-video {
+    width: 80%;
+    margin: 0px auto;
+    height: max-content;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+#in-video video {
+    width: 95%;
+    border-radius: 30px;
+}
+
+#pride {
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+    margin-bottom: 100px;
+}
+
+#video {
+    width: 90%;
+    margin: 0px auto;
+
+}
+
+.vid-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px
+}
+
+#video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.vid-content-cont {
+    display: grid;
+    place-items: center;
+}
+
+.vid-content {}
+
+.vid-content h3 {
+    font-size: 45px;
+    font-weight: 600;
+    margin:30px 0px;
+    color: rgb(0, 0, 0);
+}
+
+.vid-content p {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.vid-content button {
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: dodgerblue;
+    color: rgb(255, 255, 255);
+}
+
+#sponsor {
+    margin-top: 70px;
+}
+.btnSponCont{
+    width: max-content;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+.btnSponCont button{
+padding: 10px 20px;
+font-size: 20px;   
+}
+
+.images {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    margin: 70px 0px 50px;
+    scrollbar-width: none;
+    padding-left: 300px;
+}
+
+#sponsor .images>div {
+    width: 600px;
+    height: 400px;
+    display: inline-block;
+}
+
+#sponsor .images>div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+#price {
+    width: 90%;
+    height: max-content;
+    margin: 0px auto;
+    margin: 100px auto;
+
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    margin-top: 70px;
+}
+
+#price .price-top {
+    padding: 30px 10px 50px 30px;
+}
+
+#price .Priceuncont {
+    width: 400px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.342);
+    padding: 30px 0px 0px;
+    border-radius: 20px;
+    background-color:rgba(235, 235, 235, 0.203);
+    border:none;
+}
+
+
+
+#price .Priceuncont h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#price .Priceuncont .grey {
+    color: grey;
+}
+
+#price .Priceuncont button {
+    padding: 10px 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.price-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    margin-bottom: 20px;
+}
+
+.price-grid>span {
+    font-size: 13px;
+}
+
+#price .price-bottom {
+    background-color: rgba(128, 128, 128, 0.356);
+    padding: 30px 10px 30px 30px;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#comment {
+    width: 95%;
+    margin: 0px auto;
+    background-color: rgba(192, 192, 192, 0.447);
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 50px;
+
+}
+
+#comment .comment-div {
+    display: flex;
+}
+
+#comment #scroll-display {
+    display: grid;
+    place-items: center;
+    width: 50%;
+    padding-left: 10px;
+}
+
+#comment #scroll-container {
+    width: 500px;
+    position: relative;
+}
+
+#left{
+    position: absolute;
+    top:50%;
+    transform: translateX(-50%);
+    padding: 10px 50px;
+    border: none ;
+    border-radius: 30px;
+    left: 0;
+    background-color: black;
+    color:white;
+    cursor: pointer;z-index: 99;
+}
+
+#right{
+    position: absolute;
+    top:50%;
+    transform: translateX(-50%);
+    padding: 10px 50px;
+    border: none ;
+    border-radius: 30px;
+    right:-100px;
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow:0 0 3px rgba(0, 0, 0, 0.42)}
+
+#comment .comment-div h3 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#comment2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#comment2>.divScroll {
+    width:450px;
+    height: 550px;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: white;
+    position: relative;
+}
+
+#comment .comment-div li {
+    list-style: none;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    background-color: rgba(128, 128, 128, 0.416);
+    border: solid dodgerblue;
+}
+
+.comm22 {
+    display: grid;
+    text-align: center;
+    width: 100%;
+}
+
+.comm22 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#content-star {
+
+}
+
+#content-star p {
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+.imagecomm {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+#footer {
+    width: 100%;
+    height: 900px;
+    background-color: rgba(128, 128, 128, 0.194);
+    margin-top: 100px;
+    padding: 100px 0px;
+}
+
+.footer-cont {
+    display: flex;
+    justify-content: center;
+    column-gap: 200px;
+}
+
+.footer-cont1 ul {
+    margin: 30px 0px;
+}
+
+.footer-cont1 ul li {
+    font-size: 13px;
+    margin: 10px 0px;
+    color: rgb(62, 62, 62);
+    list-style: none;
+}
+
+.footer-cont1 h5 {
+    font-size: 16px;
+}
+
+#icon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.icon-cont {
+    display: flex;
+    width: max-content;
+    display: flex;
+    column-gap: 20px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
