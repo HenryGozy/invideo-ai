@@ -145,8 +145,9 @@ height:50vh;
 }
 #content h1{
     font-size:20px;
-    width:350px;
-
+    width:300px;
+    margin:0px auto;
+    margin-bottom: 10px;
 }
 
 #content-text p {
@@ -369,17 +370,16 @@ font-size: 20px;
     .images{
         width:100%;
         padding-left:0px;
-        column-gap: 0px;
-    
+        column-gap: 5px;
+        padding-left: 20px;
     }
     
     #sponsor .images>div {
-        width:300px;
         height: 400px;
         display: inline-block;
     }
     #sponsor .images>div img {
-        border-radius: 0px;
+        border-radius: 10px;
     }
 
     .btnSponCont button{
@@ -461,6 +461,7 @@ font-size: 20px;
         column-gap: 0px;
         row-gap:30px;
         width: 100%;
+        margin-top: 20px;
     }
 
     #price .Priceuncont {
