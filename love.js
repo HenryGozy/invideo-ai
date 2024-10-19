@@ -42,5 +42,20 @@ function check2(){
     console.log(scrollContaianer.scrollWidth)
 }
 
+
+const hambuger = document.getElementById("hambuger")
+const cancel = document.getElementById("cancel")
+hambuger.addEventListener("click" , ()=>{
+    document.getElementById("header2").style.display="flex"
+    document.body.style.overflow="hidden"
+})
+
+cancel.addEventListener("click" , ()=>{
+    document.getElementById("header2").style.display="none"
+    document.body.style.overflow="scroll"
+
+})
+const main = document.getElementsByTagName("main")[0]
+
 check() 
 
