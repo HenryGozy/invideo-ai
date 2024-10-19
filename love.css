@@ -95,6 +95,8 @@ main{
 #content {
     width: 100%;
     height: 90vh;
+    display: grid;
+    place-items:center;
  
 }
 
@@ -170,14 +172,18 @@ height:50vh;
 }
 
 #in-video video {
-    width: 95%;
+    width: 90%;
     border-radius: 5px;
 }
 
 @media(max-width:500px){
-   
-}#in-video {
-    margin-bottom: 20px;
+    #in-video video {
+        width: 100%;
+        border-radius: 5px;
+    }
+    #in-video {
+        margin-bottom: 20px;
+    }
 }
 
 #pride {
@@ -187,6 +193,15 @@ height:50vh;
     grid-template-columns: repeat(5, 1fr);
     place-items: center;
     margin-bottom: 100px;
+}
+#pride-cont{
+
+    width:max-content;
+    text-align: center;
+}
+#pride-cont h3{
+    font-size:25px;
+    font-weight: 600;
 }
 
 @media(max-width:500px){
@@ -331,10 +346,10 @@ font-size: 20px;
     overflow-y: hidden;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 20px;
+    column-gap: 10px;
     margin: 70px 0px 50px;
     scrollbar-width: none;
-    padding-left: 300px;
+    padding-left: 150px;
 }
 
 #sponsor .images>div {
@@ -344,11 +359,11 @@ font-size: 20px;
 }
 
 #sponsor .images>div img {
-    width: 100%;
+    width: 500px;
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 @media(max-width:500px){
     .images{
