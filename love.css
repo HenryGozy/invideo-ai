@@ -7,6 +7,9 @@
     font-weight: 400;
     outline: none;
 }
+.h2{
+    font-size: 45PX;
+}
 
 button {
     cursor: pointer;
@@ -477,7 +480,7 @@ main {
 
 #sponsor .images>div img {
     width: 500px;
-    height: 100%;
+    height: 100%; 
     border-radius: 10px;
     object-fit: cover;
     border-radius: 10px;
