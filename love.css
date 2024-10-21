@@ -7,9 +7,11 @@
     font-weight: 400;
     outline: none;
 }
-button{
+
+button {
     cursor: pointer;
 }
+
 .span {
     background: linear-gradient(135deg, dodgerblue, rgb(0, 0, 0));
     -webkit-background-clip: text;
@@ -25,7 +27,7 @@ body {
     overflow-x: hidden;
 }
 
-main{
+main {
     width: 100%;
     height: max-content;
     overflow-x: hidden;
@@ -40,32 +42,32 @@ main{
 .header {
     display: flex;
     justify-content: space-around;
-    column-gap:100px;
+    column-gap: 100px;
     align-items: center;
     width: 100%;
     z-index: 999;
     color: black;
     position: fixed;
-    top:5px;
+    top: 5px;
     left: 50%;
-    background-color:rgba(0, 0, 0, 0.381);
+    background-color: rgba(0, 0, 0, 0.381);
     color: rgb(255, 255, 255);
     width: max-content;
     transform: translateX(-50%);
-    padding:5px 70px;
+    padding: 5px 70px;
     border-radius: 100px;
-    background-color:rgba(255, 255, 255, 0.9);
-    box-shadow:  0 0 3px rgba(0, 0, 0, 0.326);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.326);
 }
 
 
-#blur{
-    background-color:rgba(255, 255, 255, 0.687);
+#blur {
+    background-color: rgba(255, 255, 255, 0.687);
     width: 100%;
-    height:100%;
+    height: 100%;
     position: absolute;
     border-radius: 100px;
-    z-index:-10;
+    z-index: -10;
     filter: blur(5px);
 }
 
@@ -95,23 +97,27 @@ main{
     color: rgb(255, 255, 255);
 
 }
-#header2{
+
+#header2 {
     display: none;
 }
 
-#hambuger{
+#hambuger {
     padding: 3px 10px;
     font-size: 15px;
     border: none;
     display: none;
 }
-.head-img{
+
+.head-img {
     width: 150px;
 }
-@media(max-width:500px){
-    body{
+
+@media(max-width:500px) {
+    body {
         padding-top: 30px;
     }
+
     .header {
         display: flex;
         align-items: center;
@@ -121,71 +127,76 @@ main{
         position: fixed;
         top: 0;
         color: rgb(255, 255, 255);
-        padding:5px  1%;
+        padding: 5px 1%;
         border-radius: 0px;
-        background-color:rgb(246, 242, 242);
-        box-shadow:  0 0 3px rgba(0, 0, 0, 0);
+        background-color: rgb(246, 242, 242);
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0);
     }
 
-    .boxshadow{
-        box-shadow:  0 0 3px rgba(0, 0, 0, 0.231);
+    .boxshadow {
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.231);
 
     }
 
-.head-img{
-    width: 150px;
-}
-    #header2{
-        display:none;
-        justify-content:left;
+    .head-img {
+        width: 150px;
+    }
+
+    #header2 {
+        display: none;
+        justify-content: left;
         flex-direction: column;
-        row-gap:50px;
-        align-items:baseline;
+        row-gap: 50px;
+        align-items: baseline;
         width: 100%;
         z-index: 999;
         color: black;
         position: fixed;
-        top:0;
+        top: 0;
         color: rgb(255, 255, 255);
-        width:100%;
-        height:100%;
-        padding:5px 0px;
+        width: 100%;
+        height: 100%;
+        padding: 5px 0px;
         padding-top: 30px;
-        border-radius:0px;
-        background-color:rgb(246, 242, 242);
-        box-shadow:  0 0 3px rgba(0, 0, 0, 0.326);
+        border-radius: 0px;
+        background-color: rgb(246, 242, 242);
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.326);
     }
-    #headernav{
+
+    #headernav {
         display: flex;
         flex-direction: column;
     }
-    #headernav .nav nav ul li{
+
+    #headernav .nav nav ul li {
         display: block;
         margin-top: 20px;
 
     }
 
 
-    .btn-login-container button{
+    .btn-login-container button {
         display: block;
         margin-top: 20px;
     }
 
-#cancel{
-    position: absolute;
-    right: 50px;
-    top: 20px;
-    box-shadow:  0 0 10px rgba(0, 0, 0, 0.123) ;
-}
-#hambuger{
-    padding: 3px 10px;
-    font-size: 15px;
-    border: none;
-    display: block;
-}
-.hidden{
-    display: none;
-}
+    #cancel {
+        position: absolute;
+        right: 50px;
+        top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.123);
+    }
+
+    #hambuger {
+        padding: 3px 10px;
+        font-size: 15px;
+        border: none;
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
 
 }
 
@@ -193,8 +204,8 @@ main{
     width: 100%;
     height: 80vh;
     display: grid;
-    place-items:center;
- 
+    place-items: center;
+
 }
 
 #content-text {
@@ -229,38 +240,40 @@ main{
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
-@media(max-width:500px){
-  
 
-#content{
-display: grid;
-place-items: center;  
-height:50vh;
-}
-#content h1{
-    font-size:30px;
-    width:300px;
-    margin:0px auto;
-    margin-bottom: 10px;
-}
+@media(max-width:500px) {
 
-#content-text p {
-    width:300px;
-    margin: 0px auto;
-    line-height:normal;
-    font-size: 13px;
-    margin-bottom: 20px;
-    color:rgb(92, 92, 92);
-}
 
-#content-text button {
-   font-size:13px;
-   padding: 10px 20px;
-}
+    #content {
+        display: grid;
+        place-items: center;
+        height: 50vh;
+    }
+
+    #content h1 {
+        font-size: 30px;
+        width: 300px;
+        margin: 0px auto;
+        margin-bottom: 10px;
+    }
+
+    #content-text p {
+        width: 300px;
+        margin: 0px auto;
+        line-height: normal;
+        font-size: 13px;
+        margin-bottom: 20px;
+        color: rgb(92, 92, 92);
+    }
+
+    #content-text button {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
 }
 
 #in-video {
-    width:100%;
+    width: 100%;
     margin: 0px auto;
     height: max-content;
     margin-bottom: 70px;
@@ -272,11 +285,12 @@ height:50vh;
     border-radius: 5px;
 }
 
-@media(max-width:500px){
+@media(max-width:500px) {
     #in-video video {
         width: 95%;
         border-radius: 5px;
     }
+
     #in-video {
         margin-bottom: 20px;
     }
@@ -290,17 +304,19 @@ height:50vh;
     place-items: center;
     margin-bottom: 100px;
 }
-#pride-cont{
 
-    width:max-content;
+#pride-cont {
+
+    width: max-content;
     text-align: center;
 }
-#pride-cont h3{
-    font-size:25px;
+
+#pride-cont h3 {
+    font-size: 25px;
     font-weight: 600;
 }
 
-@media(max-width:500px){
+@media(max-width:500px) {
     #pride {
         display: flex;
         flex-wrap: wrap;
@@ -311,30 +327,31 @@ height:50vh;
         margin-bottom: 50px;
     }
 
-    #pride-cont{
+    #pride-cont {
 
-        width:max-content;
+        width: max-content;
         text-align: center;
     }
 
-    #pride-cont h3{
-        font-size:21px;
+    #pride-cont h3 {
+        font-size: 21px;
         font-weight: 600;
     }
 
-    .pridediv1{
+    .pridediv1 {
         font-size: 11px;
     }
-    
-    .pridediv2 img{
-        width: 80px;
-    }   
 
-.img{
-    width: 50px;
+    .pridediv2 img {
+        width: 80px;
+    }
+
+    .img {
+        width: 50px;
+    }
+
 }
-   
-}
+
 #video {
     width: 90%;
     margin: 0px auto;
@@ -370,7 +387,7 @@ height:50vh;
 .vid-content h3 {
     font-size: 45px;
     font-weight: 600;
-    margin:30px 0px;
+    margin: 30px 0px;
     color: rgb(0, 0, 0);
 }
 
@@ -388,7 +405,7 @@ height:50vh;
     color: rgb(255, 255, 255);
 }
 
-@media(max-width:500px){
+@media(max-width:500px) {
     .vid-content h3 {
         font-size: 20px;
         text-align: center;
@@ -409,32 +426,34 @@ height:50vh;
     .vid-content button {
         padding: 5px 10px;
         font-size: 11px;
-        margin:0px auto;
+        margin: 0px auto;
     }
-    
-    #loremipsum{
+
+    #loremipsum {
         font-size: 11px;
-    
+
     }
-#vid-content-cont2{
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-}
+
+    #vid-content-cont2 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
 }
 
 #sponsor {
     margin-top: 70px;
 }
 
-.btnSponCont{
+.btnSponCont {
     width: max-content;
     margin: 0px auto;
     margin-top: 20px;
 }
-.btnSponCont button{
-padding: 10px 20px;
-font-size: 20px;   
+
+.btnSponCont button {
+    padding: 10px 20px;
+    font-size: 20px;
 }
 
 .images {
@@ -449,7 +468,7 @@ font-size: 20px;
 }
 
 #sponsor .images>div {
-    width:100%;
+    width: 100%;
     height: 300px;
     display: inline-block;
 }
@@ -461,31 +480,34 @@ font-size: 20px;
     object-fit: cover;
     border-radius: 10px;
 }
-@media(max-width:500px){
-    .images{
-        width:100%;
-        padding-left:0px;
+
+@media(max-width:500px) {
+    .images {
+        width: 100%;
+        padding-left: 0px;
         column-gap: 10px;
         padding-left: 20px;
     }
-    
+
     #sponsor .images>div {
-        width:max-content;
+        width: max-content;
         height: 200px;
         display: inline-block;
-    
+
     }
+
     #sponsor .images>div img {
-        width:300px;
+        width: 300px;
         border-radius: 10px;
     }
 
-    .btnSponCont button{
+    .btnSponCont button {
         padding: 5px 10px;
-        font-size: 15px;   
-        }
-    
+        font-size: 15px;
+    }
+
 }
+
 #price {
     width: 90%;
     height: max-content;
@@ -511,8 +533,8 @@ font-size: 20px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.342);
     padding: 30px 0px 0px;
     border-radius: 20px;
-    background-color:rgba(235, 235, 235, 0.203);
-    border:none;
+    background-color: rgba(235, 235, 235, 0.203);
+    border: none;
 }
 
 
@@ -552,19 +574,20 @@ font-size: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-@media(max-width:500px){
+
+@media(max-width:500px) {
 
     .price {
         flex-direction: column;
         column-gap: 0px;
-        row-gap:30px;
+        row-gap: 30px;
         width: 100%;
         margin-top: 20px;
         align-items: center;
     }
 
     #price .Priceuncont {
-        width:90%;
+        width: 90%;
     }
 
     #price .Priceuncont h3 {
@@ -573,7 +596,7 @@ font-size: 20px;
         margin-bottom: 20px;
         font-weight: 500;
     }
-    
+
     #price .Priceuncont .grey {
         color: grey;
         font-size: 15px;
@@ -588,18 +611,19 @@ font-size: 20px;
         font-size: 13px;
     }
 
-    .h2{
+    .h2 {
         font-size: 30px;
         font-weight: 600;
         margin-bottom: 30px;
     }
-    .header-sub p{
+
+    .header-sub p {
         font-size: 11px;
         font-weight: 400;
-        
+
     }
-    
-   
+
+
 }
 
 #comment {
@@ -629,30 +653,32 @@ font-size: 20px;
     position: relative;
 }
 
-#left{
+#left {
     position: absolute;
-    top:50%;
+    top: 50%;
     transform: translateX(-50%);
     padding: 10px 50px;
-    border: none ;
+    border: none;
     border-radius: 30px;
     left: 0;
     background-color: black;
-    color:white;
-    cursor: pointer;z-index: 99;
+    color: white;
+    cursor: pointer;
+    z-index: 99;
 }
 
-#right{
+#right {
     position: absolute;
-    top:50%;
+    top: 50%;
     transform: translateX(-50%);
     padding: 10px 50px;
-    border: none ;
+    border: none;
     border-radius: 30px;
-    right:-100px;
-    color:rgb(0, 0, 0);
+    right: -100px;
+    color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
-    box-shadow:0 0 3px rgba(0, 0, 0, 0.42)}
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.42)
+}
 
 #comment .comment-div h3 {
     font-size: 50px;
@@ -671,7 +697,7 @@ font-size: 20px;
 }
 
 #comment2>.divScroll {
-    width:450px;
+    width: 450px;
     height: 550px;
     padding: 20px;
     border-radius: 30px;
@@ -699,51 +725,55 @@ font-size: 20px;
     border-radius: 50%;
 }
 
-#content-star {
-
-}
+#content-star {}
 
 #content-star p {
     font-size: 40px;
     line-height: 50px;
     margin-top: 20px;
 }
-@media(max-width:500px){
+
+@media(max-width:500px) {
 
     #comment {
         width: 100%;
-        background-color:transparent;
-    
+        background-color: transparent;
+        padding: 30px 0px;
+
     }
-    .span{
+
+    .span {
         font-size: 25px;
     }
+
     #comment .comment-div h3 {
         font-size: 30px;
         font-weight: 600;
-        margin-bottom: 20px;
-        text-align: center;
+        margin-bottom: 20px; 
+        text-align:left;
     }
 
-    #comment .comment-div p{
-        font-size:13px;
-        line-height: 20px;
+    #comment .comment-div p {
+        font-size: 13px;
+        line-height: 30px;
+        color: rgb(92, 92, 92);
     }
 
     .comment-div {
-    flex-direction: column;
+        flex-direction: column;
     }
-    
-    #left{
-        display:none;
+
+    #left {
+        display: none;
     }
-    #right{
-        display:none;
+
+    #right {
+        display: none;
     }
 
     #comment2>.divScroll {
-        width:350px;
-        box-shadow:  0 0 3px rgba(0, 0, 0, 0.363);
+        width: 350px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.363);
     }
 
     #comment #scroll-display {
@@ -754,21 +784,22 @@ font-size: 20px;
     }
 
     #comment #scroll-container {
-        width:100%;
+        width: 100%;
         position: relative;
     }
 
     #comment2>.divScroll {
-        width:300px;
+        width: 300px;
         height: 400px;
         padding: 20px;
-        border-radius:10px;
+        border-radius: 10px;
         background-color: white;
         position: relative;
     }
-    
-   
+
+
 }
+
 .imagecomm {
     position: absolute;
     bottom: 30px;
@@ -822,17 +853,19 @@ font-size: 20px;
     margin: 0px auto;
     margin-bottom: 20px;
 }
-@media(max-width:500px){
+
+@media(max-width:500px) {
     .footer-cont {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
     }
+
     #footer {
         width: 100%;
-        height:max-content;
+        height: max-content;
         background-color: rgba(128, 128, 128, 0.194);
         margin-top: 100px;
-        padding:50px 0px;
+        padding: 50px 0px;
     }
 }
