@@ -19,14 +19,16 @@ button{
 }
 
 body {
-    background-color: rgb(246, 242, 242);
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     padding: 0;
+    overflow-x: hidden;
 }
 
 main{
     width: 100%;
     height: max-content;
+    overflow-x: hidden;
 }
 
 #new-image {
@@ -103,7 +105,9 @@ main{
     border: none;
     display: none;
 }
-
+.head-img{
+    width: 150px;
+}
 @media(max-width:500px){
     body{
         padding-top: 30px;
@@ -187,7 +191,7 @@ main{
 
 #content {
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     display: grid;
     place-items:center;
  
@@ -234,7 +238,7 @@ place-items: center;
 height:50vh;
 }
 #content h1{
-    font-size:20px;
+    font-size:30px;
     width:300px;
     margin:0px auto;
     margin-bottom: 10px;
@@ -243,9 +247,10 @@ height:50vh;
 #content-text p {
     width:300px;
     margin: 0px auto;
-    line-height: 30px;
-    font-size: 11px;
+    line-height:normal;
+    font-size: 13px;
     margin-bottom: 20px;
+    color:rgb(92, 92, 92);
 }
 
 #content-text button {
@@ -269,7 +274,7 @@ height:50vh;
 
 @media(max-width:500px){
     #in-video video {
-        width: 100%;
+        width: 95%;
         border-radius: 5px;
     }
     #in-video {
@@ -445,7 +450,7 @@ font-size: 20px;
 
 #sponsor .images>div {
     width:100%;
-    height: 400px;
+    height: 300px;
     display: inline-block;
 }
 
@@ -466,8 +471,9 @@ font-size: 20px;
     
     #sponsor .images>div {
         width:max-content;
-        height: 300px;
+        height: 200px;
         display: inline-block;
+    
     }
     #sponsor .images>div img {
         width:300px;
@@ -554,14 +560,15 @@ font-size: 20px;
         row-gap:30px;
         width: 100%;
         margin-top: 20px;
+        align-items: center;
     }
 
     #price .Priceuncont {
-        width:inherit;
+        width:90%;
     }
 
     #price .Priceuncont h3 {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
         margin-bottom: 20px;
         font-weight: 500;
@@ -573,12 +580,12 @@ font-size: 20px;
     }
 
     #price .Priceuncont button {
-        padding: 10px 30px;
+        padding: 5px 20px;
         border-radius: 30px;
         border: none;
         background-color: black;
         color: white;
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .h2{
@@ -587,7 +594,7 @@ font-size: 20px;
         margin-bottom: 30px;
     }
     .header-sub p{
-        font-size: 13px;
+        font-size: 11px;
         font-weight: 400;
         
     }
@@ -705,6 +712,7 @@ font-size: 20px;
 
     #comment {
         width: 100%;
+        background-color:transparent;
     
     }
     .span{
@@ -735,6 +743,7 @@ font-size: 20px;
 
     #comment2>.divScroll {
         width:350px;
+        box-shadow:  0 0 3px rgba(0, 0, 0, 0.363);
     }
 
     #comment #scroll-display {
@@ -750,7 +759,7 @@ font-size: 20px;
     }
 
     #comment2>.divScroll {
-        width:400px;
+        width:300px;
         height: 400px;
         padding: 20px;
         border-radius:10px;
