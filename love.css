@@ -904,9 +904,10 @@ main {
 
 @media(max-width:500px) {
     .footer-cont {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+        display: grid;
+      grid-template-columns:1fr 1fr ;
+      place-items: center;
+       
     }
 
     #footer {
