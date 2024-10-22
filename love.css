@@ -904,11 +904,27 @@ main {
 
 @media(max-width:500px) {
     .footer-cont {
-        display: grid;
-      grid-template-columns:1fr 1fr ;
-      place-items: center;
-       
+        column-gap: 20px;
+     display: flex;
+     flex-wrap: wrap;
+    
+     justify-content: center;
+    
     }
+
+.footer-cont1{
+
+    width: max-content;
+}
+
+.footer-cont1 h5{
+    font-size:13px
+}
+
+.footer-cont1 ul li{
+    font-size:11px;
+}
+
 
     #footer {
         width: 100%;
@@ -916,5 +932,14 @@ main {
         background-color: rgba(128, 128, 128, 0.194);
         margin-top: 100px;
         padding: 50px 0px;
+        align-items:center;
     }
+
+    .icon-cont img{
+        width:20px;
+    }
+
+#icon span{
+    font-size: 15px;
+}
 }
