@@ -367,7 +367,7 @@ main {
 .vid-cont {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 30px
+    column-gap: 30px;
 }
 
 #video img {
