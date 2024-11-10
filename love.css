@@ -281,6 +281,7 @@ main {
     #content h1 {
         font-size: 30px;
         width: 300px;
+        line-height: normal;
         margin: 0px auto;
         margin-bottom: 10px;
     }
@@ -305,12 +306,12 @@ main {
     margin: 0px auto;
     height: max-content;
     margin-bottom: 70px;
+    padding: 0px 10px;
     text-align: center;
 }
 
 #in-video video {
     width: 80%;
-    border-radius: 5px;
 }
 
 @media(max-width:500px) {
@@ -320,8 +321,15 @@ main {
     }
 
     #in-video {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
+    
+    #in-video video {
+        width:100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    
 }
 
 #pride {
@@ -406,6 +414,7 @@ main {
     width: 100%;
     height: 100%;
     border-radius: 10px;
+ 
 }
 
 .vid-content-cont {
@@ -502,6 +511,11 @@ main {
     display: inline-block;
 }
 
+.header-sub p{
+    text-align: center;
+    width: 300px;
+}
+
 #sponsor .images>div img {
     width: 500px;
     height: 100%;
@@ -515,7 +529,9 @@ main {
         width: 100%;
         padding-left: 0px;
         column-gap: 10px;
-        padding-left: 20px;
+        padding-left:0px;
+        margin: 30px 0px 30px 0px;
+        padding-left: 10px;
     }
 
     #sponsor .images>div {
@@ -542,7 +558,6 @@ main {
     height: max-content;
     margin: 0px auto;
     margin: 100px auto;
-
 }
 
 .price {
@@ -617,17 +632,23 @@ main {
 
 @media(max-width:500px) {
 
+    #price {
+        margin-top: 30px;
+    
+    }
     .price {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         column-gap: 0px;
         row-gap: 30px;
         width: 100%;
-        margin-top: 20px;
-        align-items: center;
+        margin-top: 30px;
     }
 
     #price .Priceuncont {
-        width: 90%;
+        width: 100%;
+        border-radius: 2px;
     }
 
     #price .Priceuncont h3 {
@@ -654,11 +675,11 @@ main {
     .h2 {
         font-size: 30px;
         font-weight: 600;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .header-sub p {
-        font-size: 11px;
+        font-size: 13pxx;
         font-weight: 400;
 
     }
@@ -744,6 +765,7 @@ main {
     font-size: 50px;
     font-weight: 600;
     margin-bottom: 20px;
+    
 }
 
 #comment2 {
@@ -828,97 +850,82 @@ main {
 
     #comment {
         width: 100%;
-        background-color: transparent;
-        padding: 30px 0px;
-
+        margin: 0px auto;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding: 30px 10px;
     }
-
-    #comment #scroll-display h3 {
-        font-size: 20px;
-        font-weight: 600;
-    }
-
-    #comment #scroll-display p {
-        font-size: 13px
-    }
-
-
-    .span {
-        font-size: 25px;
-    }
-
-    #comment .comment-div h3 {
-        font-size: 30px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        text-align: left;
-    }
-
-    #comment .comment-div p {
-        font-size: 13px;
-        line-height: 30px;
-        color: rgb(92, 92, 92);
-    }
-
-    #comment .comment-div #scroll-container p {
-        font-size: 20px;
-        line-height: 30px;
-        color: rgb(30, 30, 30);
-    }
-
-    .comment-div {
+    #comment .comment-div {
+        display: flex;
+        row-gap: 30px;
         flex-direction: column;
     }
-
-    #left {
-        position: absolute;
-        top: 50%;
-        transform: translateX(-50%);
-        padding: 5px 20px;
-        border: none;
-        border-radius: 30px;
-        left: 30px;
-        background-color: dodgerblue;
-        color: white;
-        cursor: pointer;
-        z-index: 99;
-        font-size: 11px;
-    }
-
-    #left i {
-
-        font-size: 11px;
-    }
-
-    #right {
-        display: none;
-    }
-
-    #comment2>.divScroll {
-        width: 350px;
-        box-shadow: 0 0 3px rgba(0, 0, 0, 0.363);
-    }
-
     #comment #scroll-display {
         display: grid;
         place-items: center;
-        width: 100%;
-        padding-left: 10px;
+        text-align: center;
     }
+    
 
-    #comment #scroll-container {
-        width: 100%;
-        position: relative;
-    }
+#comment #scroll-display h3 {
+    font-size: 30px;
+    font-weight: 600;
+    width:max-content;
+    background: linear-gradient(135deg, rgb(255, 6, 110), rgb(91, 1, 170), rgb(206, 111, 3));
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
-    #comment2>.divScroll {
-        width: 270px;
-        height: 400px;
-        padding: 20px;
-        border-radius: 10px;
-        background-color: white;
-        position: relative;
-    }
+#comment #scroll-display p {
+    font-size: 13px;
+    line-height: 30px;
+    width:300px;
+    color: rgb(64, 64, 64);
+    margin-top: 20px;
+}
+
+#comment2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 30px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#comment2>.divScroll {
+    width: 350px;
+    height:max-content;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(225, 225, 225);
+    backdrop-filter:blur(20px);
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.412);
+}
+
+.comm22 {
+    display: grid;
+    text-align:left;
+    grid-template-columns: 70px 1fr;
+}
+
+.comm22 img {
+    width: 50px;
+    height: 50px;
+    border-radius:10px;
+
+}
+
+#content-star p {
+    font-size: 20px;
+    line-height: 50px;
+    margin:5px 0px;
+    color: rgb(30, 30, 30);
+    font-weight: 400;
+
+}
 
 
 }
