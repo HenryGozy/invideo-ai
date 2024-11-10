@@ -7,7 +7,6 @@ btn.addEventListener('click',()=>{
     scrollamout = (btn.id === 'left') ? -1 : 1
     console.log(scrollamout)
     let scrollDirection = scrollamout * scrollWidth 
-    console.log(scrollDirection)
     scrollContaianer.scrollBy({left:scrollDirection , behavior:"smooth"})
 })
 })
@@ -16,14 +15,13 @@ scrollContaianer.addEventListener('scroll',check)
 
 function check(){
     buttons[0].style.display = (scrollContaianer.scrollLeft == 0) ? "none" : "block"
-    console.log(scrollContaianer.scrollWidth)
 }
 
 check() 
 
 
 const buttonsPon = document.querySelectorAll(".btnSponCont button")
-console.log(buttonsPon)
+
 const scrollContaianerSpon = document.getElementsByClassName('images')[0]
 buttonsPon.forEach((btn)=>{
 btn.addEventListener('click',()=>{
@@ -39,7 +37,6 @@ scrollContaianer.addEventListener('scroll',check)
 
 function check2(){
     buttonsPon[0].style.display = (scrollContaianer.scrollLeft == 0) ? "none" : "block"
-    console.log(scrollContaianer.scrollWidth)
 }
 
 
@@ -55,7 +52,6 @@ cancel.addEventListener("click" , ()=>{
     document.body.style.overflow="scroll"
 
 })
-const main = document.getElementsByTagName("main")[0]
 
 check() 
 
