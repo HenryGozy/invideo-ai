@@ -106,6 +106,12 @@ main {
     color: black;
 }
 
+.nav nav ul li a {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
 .btn-login-container button {
     padding: 5px 10px;
     border-radius: 5px;
@@ -242,7 +248,7 @@ main {
 }
 
 #content-text h1 {
-    font-size: 70px;
+    font-size: 90px;
     font-weight: 600;
     margin: 20px 0px;
     line-height: 90px;
@@ -483,24 +489,13 @@ main {
     margin-top: 70px;
 }
 
-.btnSponCont {
-    width: max-content;
-    margin: 0px auto;
-    margin-top: 20px;
-}
-
-.btnSponCont button {
-    padding: 10px 20px;
-    font-size: 20px;
-}
-
 .images {
     overflow-x: scroll;
     overflow-y: hidden;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 10px;
-    margin: 70px 0px 50px;
+    margin: 30px 0px 50px;
     scrollbar-width: none;
     padding-left: 150px;
 }
@@ -524,6 +519,36 @@ main {
     border-radius: 10px;
 }
 
+.btnSponCont {
+    width: max-content;
+    margin: 0px auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.btnSponCont button {
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+#sponleft{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+
+#sponright{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+#sponleft i , #sponright i{
+    font-size:30px;
+    color:rgb(66, 66, 66);
+}
 @media(max-width:500px) {
     .images {
         width: 100%;
@@ -728,38 +753,34 @@ main {
 
 #comment #scroll-container {
     position: relative;
+    height: max-content;
 }
 
-#left {
-    position: absolute;
-    top: 50%;
-    transform: translateX(-50%);
-    padding: 10px 50px;
-    border: none;
-    border-radius: 30px;
-    left: 0;
-    background-color: transparent;
-    backdrop-filter: blur(20px);
-    color: rgb(0, 0, 0);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.42);
 
-    cursor: pointer;
-    z-index: 99;
+#button-comment{
+width: max-content;
+margin:0px auto;
+margin-top: 30px;
+display:flex;
+justify-content:center;
+column-gap: 10px;
+position: absolute;
+right:200px;
+top:-90px;
 }
 
-#right {
-    position: absolute;
-    top: 50%;
-    transform: translateX(-50%);
-    padding: 10px 50px;
-    border: none;
-    border-radius: 30px;
-    right: -100px;
-    color: rgb(0, 0, 0);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.42);
-    background-color: transparent;
+#left, #right {
+ background-color: transparent;
+ border: none;
+ padding: 10px 20px;
 }
+
+#left i, #right i {
+    font-size: 30px;
+   }
+   
+
+
 
 #comment .comment-div h3 {
     font-size: 50px;
@@ -771,10 +792,9 @@ main {
 #comment2 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 30px;
+    column-gap: 15px;
     overflow-x: scroll;
     scrollbar-width: none;
-    padding: 20px;
     border-radius: 20px;
 }
 
@@ -887,7 +907,7 @@ main {
 #comment2 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 30px;
+    column-gap: 13px;
     overflow-x: scroll;
     scrollbar-width: none;
     padding: 10px;
@@ -895,7 +915,7 @@ main {
 }
 
 #comment2>.divScroll {
-    width: 350px;
+    width: 320px;
     height:max-content;
     padding: 20px;
     border-radius: 10px;
@@ -919,13 +939,29 @@ main {
 }
 
 #content-star p {
-    font-size: 20px;
-    line-height: 50px;
+    font-size: 15px;
+    line-height:normal;
     margin:5px 0px;
     color: rgb(30, 30, 30);
     font-weight: 400;
 
 }
+
+#content-star b {
+    font-size:13px;
+    line-height: 50px;
+    margin-top:900px;
+    color: rgb(54, 54, 54);
+    font-weight: 400;
+
+}
+
+#star i{
+    color: rgb(141, 132, 0);
+    font-size:15px;
+
+}
+
 
 
 }
